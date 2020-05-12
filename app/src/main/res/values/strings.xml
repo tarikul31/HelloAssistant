@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">HelloAssistant</string>
+    <string name="navigation_drawer_open" />
+    <string name="navigation_drawer_close" />
+    <string name="user_name">User Name</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="create_new">Create New</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="otp">Otp</string>
+    <string name="verify">Verify</string>
+    <string name="name">Name</string>
+    <string name="welcome">WELCOME TO HELLO ASSISTANT</string>
+
+    <string-array name="countries">
+        <item>Afghanistan</item>
+        <item>Africa</item>
+        <item>Bangladesh</item>
+        <item>Brazil</item>
+        <item>Belgium</item>
+        <item>Canada</item>
+        <item>China</item>
+        <item>Colombia</item>
+        <item>Denmark</item>
+        <item>India</item>
+        <item>Italy</item>
+    </string-array>
+</resources>

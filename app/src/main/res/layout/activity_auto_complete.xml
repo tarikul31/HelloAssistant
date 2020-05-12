@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.AutoComplete">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="@color/colorOrange"
+        android:text="Autocomplete TextView"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/colorWhite">
+
+    </TextView>
+    <AutoCompleteTextView
+        android:id="@+id/actvCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:completionHint="Select Country"
+        android:completionThreshold="1"
+        android:dropDownAnchor="@id/tvDemo"
+        android:hint="Select Country"
+        android:textSize="18sp"
+        android:layout_margin="15dp">
+
+    </AutoCompleteTextView>
+
+
+    <TextView
+        android:id="@+id/tvDemo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Country Information"
+        android:textSize="18sp"
+        android:layout_margin="15dp"
+        android:padding="12dp"/>
+
+</LinearLayout>

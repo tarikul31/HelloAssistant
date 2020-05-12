@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/custom_recycler"
+    android:padding="2dp"
+    android:layout_margin="2dp">
+    <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:background="@color/colorSilver">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".4"
+                android:gravity="center">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivOrdImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/img2"
+                    android:scaleType="centerCrop">
+                </de.hdodenhof.circleimageview.CircleImageView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:background="@color/colorSilver"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:layout_margin="2dp">
+                <TextView
+                    android:id="@+id/tvOrdName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name : Men's Cutton Panjabi"
+                    android:textSize="15sp"
+                    android:padding="2dp"
+                    android:textColor="@color/colorBlack">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/tvOrdCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Code : 00000000000123"
+                    android:textSize="15sp"
+                    android:padding="2dp"
+                    android:textColor="@color/colorBlack">
+
+                </TextView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tvOrdSize"
+                        android:layout_weight=".75"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Size : 33"
+                        android:textSize="15sp"
+                        android:padding="2dp"
+                        android:textColor="@color/colorBlack">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/tvOrdPrice"
+                        android:layout_weight="1.25"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Price : 20000"
+                        android:textSize="15sp"
+                        android:padding="2dp"
+                        android:textColor="@color/colorBlack">
+                    </TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".4"
+                android:background="@color/colorSilver"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="2dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/orProductDel"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/ic_delete_black_24dp"
+                    android:scaleType="centerCrop">
+                </de.hdodenhof.circleimageview.CircleImageView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    android:background="@color/colorSilver"
+                    android:layout_marginTop="10dp">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/orDecrementQty"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_remove_circle_black_24dp"
+                            android:scaleType="centerCrop">
+                        </de.hdodenhof.circleimageview.CircleImageView>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvOrdQty"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="1"
+                        android:textSize="15sp"
+                        android:padding="1dp"
+                        android:textColor="@color/colorAarong"
+                        android:gravity="center"
+                        android:textAlignment="center">
+                    </TextView>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/orIncrementQty"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_add_circle_black"
+                            android:scaleType="centerCrop">
+                        </de.hdodenhof.circleimageview.CircleImageView>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+</LinearLayout>

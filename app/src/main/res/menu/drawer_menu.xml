@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/navHomeId"
+            android:icon="@drawable/ic_add_file"
+            android:title="Home Page" />
+
+        <item
+            android:id="@+id/navRestApiId"
+            android:icon="@drawable/ic_message"
+            android:title="Rest Api" />
+
+        <item
+            android:id="@+id/navCamScannerId"
+            android:icon="@drawable/qr_scanner"
+            android:title="Scanner" />
+
+        <item
+            android:id="@+id/navAutoCompleteId"
+            android:icon="@drawable/ic_movie"
+            android:title="Autocomplete TextView"/>
+        <item
+            android:id="@+id/navAddMovieId"
+            android:icon="@drawable/ic_add_file"
+            android:title="Add Movie" />
+
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nac_setting"
+                android:icon="@drawable/ic_settings"
+                android:title="Setting" />
+            <item
+                android:id="@+id/nac_help"
+                android:icon="@drawable/ic_help"
+                android:title="Help" />
+        </menu>
+    </item>
+</menu>
