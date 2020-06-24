@@ -11,8 +11,8 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/ivLogo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
         android:src="@drawable/soft_logo"
         android:scaleType="centerCrop">
 
@@ -22,11 +22,11 @@
         android:id="@+id/tvText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:textAlignment="center"
-        android:fontFamily="@font/arya"
+        android:layout_marginTop="180dp"
+        android:fontFamily="@font/felipa"
         android:text="@string/welcome"
+        android:textAlignment="center"
         android:textColor="@color/colorWhite"
-        android:textSize="30sp" />
+        android:textSize="35sp" />
 
 </LinearLayout>

@@ -10,7 +10,7 @@
     <string name="otp">Otp</string>
     <string name="verify">Verify</string>
     <string name="name">Name</string>
-    <string name="welcome">WELCOME TO HELLO ASSISTANT</string>
+    <string name="welcome">Welcome To Android Assistant</string>
 
     <string-array name="countries">
         <item>Afghanistan</item>

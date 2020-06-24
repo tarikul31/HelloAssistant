@@ -15,6 +15,7 @@ import com.softmaticbd.helloassistant.activity.CreatePostActivity;
 import com.softmaticbd.helloassistant.activity.HomeActivity;
 import com.softmaticbd.helloassistant.activity.MenuActivity;
 import com.softmaticbd.helloassistant.activity.RestApiActivity;
+import com.softmaticbd.helloassistant.activity.UserActivity;
 import com.softmaticbd.helloassistant.login.SignInActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -33,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        startActivity(new Intent(MainActivity.this, RestApiActivity.class));
+                        startActivity(new Intent(MainActivity.this, UserActivity.class));
                     }
                 },500);
             }

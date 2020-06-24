@@ -56,6 +56,10 @@ public class MenuActivity extends AppCompatActivity implements NavigationView.On
                 Toast.makeText(getApplicationContext(),"Home Activity",Toast.LENGTH_SHORT).show();
                 break;
             }
+            case R.id.navUserInfo : {
+                startActivity(new Intent(MenuActivity.this,UserActivity.class));
+                break;
+            }
             case R.id.navRestApiId : {
                 startActivity(new Intent(MenuActivity.this,RestApiActivity.class));
                 break;

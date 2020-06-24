@@ -9,6 +9,11 @@
             android:title="Home Page" />
 
         <item
+            android:id="@+id/navUserInfo"
+            android:icon="@drawable/ic_profile"
+            android:title="User Info" />
+
+        <item
             android:id="@+id/navRestApiId"
             android:icon="@drawable/ic_message"
             android:title="Rest Api" />
