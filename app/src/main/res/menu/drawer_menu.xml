@@ -25,8 +25,8 @@
 
         <item
             android:id="@+id/navAutoCompleteId"
-            android:icon="@drawable/ic_movie"
-            android:title="Autocomplete TextView"/>
+            android:icon="@drawable/ic_auto_brightness"
+            android:title="Auto Completer"/>
         <item
             android:id="@+id/navAddMovieId"
             android:icon="@drawable/ic_add_file"

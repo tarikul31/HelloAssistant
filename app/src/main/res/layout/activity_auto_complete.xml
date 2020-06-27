@@ -5,39 +5,198 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activity.AutoComplete">
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".activity.AutoComplete"
+    android:background="@color/colorWhite">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="?android:actionBarSize"
         android:background="@color/colorOrange"
-        android:text="Autocomplete TextView"
+        android:text="Auto completer and Random Number "
         android:textAlignment="center"
         android:gravity="center"
         android:textSize="18sp"
         android:textColor="@color/colorWhite">
 
     </TextView>
-    <AutoCompleteTextView
-        android:id="@+id/actvCountry"
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:completionHint="Select Country"
-        android:completionThreshold="1"
-        android:dropDownAnchor="@id/tvDemo"
-        android:hint="Select Country"
-        android:textSize="18sp"
-        android:layout_margin="15dp">
+        android:background="@drawable/custom_edit_text"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp">
+        <ToggleButton
+            android:id="@+id/toggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="    Random Number "
+            android:textOn="    Auto Completer "
+            android:drawableStart="@drawable/selector"
+            android:background="@color/colorDeepASh"
+            android:padding="10dp"/>
 
-    </AutoCompleteTextView>
-
-
-    <TextView
-        android:id="@+id/tvDemo"
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/layoutAutoComplete"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Country Information"
-        android:textSize="18sp"
-        android:layout_margin="15dp"
-        android:padding="12dp"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorDeepASh"
+        android:layout_marginTop="10dp">
+        <AutoCompleteTextView
+            android:id="@+id/actvCountry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:completionHint="Select Country"
+            android:completionThreshold="1"
+            android:dropDownAnchor="@id/tvDemo"
+            android:hint="Select Country"
+            android:textSize="18sp"
+            android:layout_margin="15dp">
+
+        </AutoCompleteTextView>
+
+        <TextView
+            android:id="@+id/tvDemo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Country Information"
+            android:textSize="18sp"
+            android:layout_margin="15dp"
+            android:padding="12dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/layoutGenerateRandom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorSilver">
+            <EditText
+                android:id="@+id/etNumber1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="number 1"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorLightBlack"
+                android:background="@drawable/custom_edit_text"
+                android:layout_margin="5dp">
+
+            </EditText>
+            <EditText
+                android:id="@+id/etNumber2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="number 2"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorLightBlack"
+                android:background="@drawable/custom_edit_text"
+                android:layout_margin="5dp">
+
+            </EditText>
+            <EditText
+                android:id="@+id/etNumber3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="number 3"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorLightBlack"
+                android:background="@drawable/custom_edit_text"
+                android:layout_margin="5dp">
+
+            </EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:background="@color/colorSilver"
+            android:layout_marginTop="5dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".75"
+                android:gravity="left">
+                <Button
+                    android:id="@+id/btnGetMax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Get Max"
+                    android:padding="10dp"
+                    android:layout_margin="5dp">
+
+                </Button>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tvMaxResult"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.25"
+                android:textAlignment="center"
+                android:hint="Result"
+                android:textColor="@color/colorOrange"
+                android:textColorHint="@color/colorLightBlack"
+                android:textSize="18sp"
+                android:padding="12dp"
+                android:layout_gravity="center"
+                android:background="@drawable/custom_edit_text">
+
+            </TextView>
+
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/btnGetRandom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get Random"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:textSize="16sp">
+
+        </Button>
+
+        <TextView
+            android:id="@+id/tvRandomResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edit_text"
+            android:padding="15dp"
+            android:layout_margin="10dp"
+            android:textSize="18sp"
+            android:hint="Random Number"
+            android:textColorHint="@color/colorDeepASh"
+            android:textColor="@color/colorOrange">
+
+        </TextView>
+
+
+
+
+
+    </LinearLayout>
 
 </LinearLayout>
